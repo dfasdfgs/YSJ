@@ -15,11 +15,9 @@ public class SceneLoader : MonoBehaviour
     {
         if (collision.gameObject.tag == "pickupitem")
         {
-            if (fadeEffect != null)
-            {
-                StartCoroutine(HandlePlayerRespawn());
-                SceneLoad();
-            }
+
+            SceneLoad();
+
         }
     }
 
