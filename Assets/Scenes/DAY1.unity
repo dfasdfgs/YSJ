@@ -2056,7 +2056,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ta: {fileID: 2088711575}
-  target: {fileID: 0}
+  target: {fileID: 1605057911}
   thePlayer: {fileID: 292402176}
   theCamera: {fileID: 519420028}
 --- !u!61 &1133597895
@@ -2680,7 +2680,7 @@ Transform:
   m_GameObject: {fileID: 1605057910}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.497967, y: 0.80371326, z: 0.03813085}
+  m_LocalPosition: {x: 3.6, y: 0.80371326, z: 0.03813085}
   m_LocalScale: {x: 2.416522, y: 2.4081419, z: 2.75}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -3745,7 +3745,7 @@ Transform:
   m_GameObject: {fileID: 2109622331}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -23.56, y: -2.554708, z: 0.05615127}
+  m_LocalPosition: {x: 6.65, y: -2.554708, z: 0.05615127}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3763,7 +3763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54d7c8d46a860434cba21c216b33fbd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ta: {fileID: 2088711575}
+  ta: {fileID: 342178112}
   target: {fileID: 1605057911}
   thePlayer: {fileID: 292402176}
   theCamera: {fileID: 519420028}
