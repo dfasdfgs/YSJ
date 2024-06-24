@@ -3996,7 +3996,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Img_Renderer: {fileID: 670939058}
-  Sprite01: {fileID: 639648809, guid: 7183067b1606fcf4982ad0e79b0a9275, type: 3}
+  Sprite01: {fileID: -387290401, guid: 7183067b1606fcf4982ad0e79b0a9275, type: 3}
 --- !u!61 &1002266242
 BoxCollider2D:
   m_ObjectHideFlags: 0
