@@ -1140,7 +1140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxSpeed: 3
   JumpPower: 12.2
-  respawnPoint: {fileID: 76593864}
+  respawnPoint: {fileID: 565799811}
   fadeEffect: {fileID: 1930181132}
 --- !u!58 &292402181
 CircleCollider2D:

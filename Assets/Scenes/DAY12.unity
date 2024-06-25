@@ -1531,6 +1531,7 @@ MonoBehaviour:
   MaxSpeed: 3
   JumpPower: 12.2
   respawnPoint: {fileID: 76593864}
+  mainCamera: {fileID: 0}
   fadeEffect: {fileID: 1930181132}
 --- !u!58 &292402181
 CircleCollider2D:

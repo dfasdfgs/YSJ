@@ -6,12 +6,17 @@ public class PlayerMove : MonoBehaviour
     public float MaxSpeed;
     public float JumpPower;
     public Transform respawnPoint; // 부활 지점
+    
 
     public FadeInEffect fadeEffect; // FadeInEffect 스크립트 참조
     private float fadeTime; // FadeInEffect의 fadeTime 변수를 저장하기 위한 변수
 
     private bool IsJumping;
     private Rigidbody2D PlayerRigid;
+
+    private Vector3 initialcameraPosition;
+    public Vector3[] mapCameraInitialpositions;
+    private int currentMapIndex = 0;
 
     public static bool Getitem { get; private set; }  // 아이템 획득 상태
     public static bool Finish { get; private set; }   // 목표 도착 상태
@@ -26,6 +31,13 @@ public class PlayerMove : MonoBehaviour
 
     private void Start()
     {
+        initialcameraPosition = transform.position;
+
+        mapCameraInitialpositions = new Vector3[]
+        {
+            new Vector3(0,0,-10),
+            new Vector3(10,5,-10),
+        };
         // FadeInEffect에서 fadeTime 변수 가져오기
         fadeTime = fadeEffect.fadeTime;
 
@@ -98,6 +110,15 @@ public class PlayerMove : MonoBehaviour
         // 플레이어 위치를 부활 지점으로 설정
         transform.position = respawnPoint.position;
         PlayerRigid.velocity = Vector2.zero;
+
+        if (currentMapIndex < mapCameraInitialpositions.Length)
+        {
+            Camera.main.transform.position = mapCameraInitialpositions[currentMapIndex];
+        }
+        else
+        {
+            Debug.LogError("맵 인덱스가 초기화된 카메라 위치 배열의 범위를 벗어납니다.");
+        }
 
         Debug.Log("페이드 인 시작");
         // 페이드 인 시작
