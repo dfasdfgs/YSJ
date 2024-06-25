@@ -1199,8 +1199,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxSpeed: 3
   JumpPower: 12.2
-  respawnPoint: {fileID: 408724456}
+  respawnPoint: {fileID: 225534177}
   fadeEffect: {fileID: 1930181132}
+  mapCameraInitialpositions: []
 --- !u!58 &292402181
 CircleCollider2D:
   m_ObjectHideFlags: 0
