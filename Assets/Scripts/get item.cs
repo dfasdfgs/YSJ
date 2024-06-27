@@ -6,26 +6,24 @@ using UnityEngine.U2D.Animation;
 public class getitem: MonoBehaviour
 {
     public SpriteRenderer Img_Renderer;
-    public Sprite Sprite01;
+    public Sprite sprites;
 
 
     void Start()
     {
         Img_Renderer = GetComponent<SpriteRenderer>();
+
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "item")
         {
-            Img_Renderer.sprite = Sprite01;
-            Destroy(collision.gameObject);
             gameObject.tag = "pickupitem";
+
+            Img_Renderer.sprite = sprites;
+            Destroy(collision.gameObject);
         }
     }
 
-    void Update()
-    {
-
-    }
 }

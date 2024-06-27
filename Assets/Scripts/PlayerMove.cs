@@ -6,7 +6,7 @@ public class PlayerMove : MonoBehaviour
     public float MaxSpeed;
     public float JumpPower;
     public Transform respawnPoint; // 부활 지점
-    
+
 
     public FadeInEffect fadeEffect; // FadeInEffect 스크립트 참조
     private float fadeTime; // FadeInEffect의 fadeTime 변수를 저장하기 위한 변수
@@ -124,7 +124,6 @@ public class PlayerMove : MonoBehaviour
         // 페이드 인 시작
         fadeEffect.OnFade(FadeState.FadeIn);
     }
-
 }
 
 
