@@ -1,12 +1,13 @@
 using UnityEngine;
 using System.Collections;
+using System.Runtime.InteropServices;
 
 public class PlayerMove : MonoBehaviour
 {
     public float MaxSpeed;
     public float JumpPower;
     public Transform respawnPoint; // 부활 지점
-
+    private Animator animator;
 
     public FadeInEffect fadeEffect; // FadeInEffect 스크립트 참조
     private float fadeTime; // FadeInEffect의 fadeTime 변수를 저장하기 위한 변수
@@ -17,6 +18,7 @@ public class PlayerMove : MonoBehaviour
     private Vector3 initialcameraPosition;
     public Vector3[] mapCameraInitialpositions;
     private int currentMapIndex = 0;
+    private SpriteRenderer spriterenderer;
 
     public static bool Getitem { get; private set; }  // 아이템 획득 상태
     public static bool Finish { get; private set; }   // 목표 도착 상태
@@ -46,32 +48,50 @@ public class PlayerMove : MonoBehaviour
         {
             respawnPoint = transform;
         }
-    }
+        animator = GetComponent<Animator>();
+        spriterenderer = GetComponent<SpriteRenderer>();
 
-    private void FixedUpdate()
-    {
-        float h = Input.GetAxisRaw("Horizontal");
-        PlayerRigid.AddForce(Vector2.right * h, ForceMode2D.Impulse);
-
-        if (PlayerRigid.velocity.x > MaxSpeed)
-            PlayerRigid.velocity = new Vector2(MaxSpeed, PlayerRigid.velocity.y);
-        else if (PlayerRigid.velocity.x < MaxSpeed * (-1))
-            PlayerRigid.velocity = new Vector2(MaxSpeed * (-1), PlayerRigid.velocity.y);
     }
 
     private void Update()
     {
         if (Input.GetButtonDown("Jump") && !IsJumping)
         {
+            animator.SetTrigger("Jump");
             PlayerRigid.AddForce(Vector2.up * JumpPower, ForceMode2D.Impulse);
             IsJumping = true;
         }
+        Move();
+    }
 
-        if (Input.GetButtonUp("Horizontal"))
+
+    private void Move()
+    {
+        if (Input.GetKey(KeyCode.RightArrow))
         {
-            PlayerRigid.velocity = new Vector2(PlayerRigid.velocity.normalized.x * 0.5f, PlayerRigid.velocity.y);
+            transform.Translate(Vector3.right * MaxSpeed * Time.deltaTime);
+            animator.SetBool("Move", true);
+        }
+        else if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            transform.Translate(Vector3.left * MaxSpeed * Time.deltaTime);
+            animator.SetBool("Move", true);
+        }
+        else 
+        {
+            animator.SetBool("Move", false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            spriterenderer.flipX = false;
+        }
+        else if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            spriterenderer.flipX = true;
         }
     }
+
 
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -86,6 +106,7 @@ public class PlayerMove : MonoBehaviour
         if (collision.gameObject.tag == "item")
         {
             Getitem = true;
+            animator.SetBool("I_Move", true);
         }
         else if (collision.gameObject.tag == "Finish")
         {
