@@ -170,7 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ta: {fileID: 1016614412}
   target: {fileID: 0}
-  thePlayer: {fileID: 0}
+  thePlayer: {fileID: 1276759408}
   theCamera: {fileID: 519420028}
 --- !u!61 &52996500
 BoxCollider2D:
@@ -549,7 +549,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ta: {fileID: 342178112}
   target: {fileID: 76593864}
-  thePlayer: {fileID: 0}
+  thePlayer: {fileID: 1276759408}
   theCamera: {fileID: 519420028}
 --- !u!1 &252837219
 GameObject:
@@ -1076,7 +1076,7 @@ GameObject:
   - component: {fileID: 565857477}
   m_Layer: 0
   m_Name: "\uBC14\uB2E5 (1)"
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1781,7 +1781,7 @@ GameObject:
   - component: {fileID: 824796960}
   m_Layer: 0
   m_Name: Gate1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1923,7 +1923,7 @@ GameObject:
   - component: {fileID: 987029399}
   m_Layer: 0
   m_Name: "\uBC14\uB2E5"
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2236,6 +2236,11 @@ Transform:
   - {fileID: 2088711575}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1276759408 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6162195466018484639, guid: bba3a9b767f8987438cc074f454bed05, type: 3}
+  m_PrefabInstance: {fileID: 620965498}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1431983875
 GameObject:
   m_ObjectHideFlags: 0
@@ -2380,7 +2385,7 @@ GameObject:
   - component: {fileID: 1506350162}
   m_Layer: 0
   m_Name: "\uC74C (1)"
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2523,7 +2528,7 @@ GameObject:
   - component: {fileID: 1520684214}
   m_Layer: 0
   m_Name: "\uB9F51"
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

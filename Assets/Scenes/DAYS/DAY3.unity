@@ -170,7 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ta: {fileID: 0}
   target: {fileID: 0}
-  thePlayer: {fileID: 0}
+  thePlayer: {fileID: 1594231529}
   theCamera: {fileID: 519420028}
 --- !u!61 &52996500
 BoxCollider2D:
@@ -1773,7 +1773,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ta: {fileID: 1944712855}
   target: {fileID: 408724456}
-  thePlayer: {fileID: 0}
+  thePlayer: {fileID: 1594231529}
   theCamera: {fileID: 519420028}
 --- !u!61 &579156060
 BoxCollider2D:

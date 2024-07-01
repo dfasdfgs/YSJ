@@ -99,7 +99,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Img_Renderer: {fileID: 0}
-  sprites: {fileID: 0}
+  sprites: {fileID: 639648809, guid: 7183067b1606fcf4982ad0e79b0a9275, type: 3}
+  isLeft: 0
 --- !u!61 &8142232863002553927
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -132,7 +133,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.30276948, y: 0.110724926}
+  m_Offset: {x: -0.30276948, y: 0.03078407}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -143,7 +144,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.40580237, y: 2.3460345}
+  m_Size: {x: 0.40580237, y: 2.505916}
   m_EdgeRadius: 0
 --- !u!1 &6162195466018484639
 GameObject:
@@ -246,7 +247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630d9bd97afe3954487b9ef541776d80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxSpeed: 3
+  MaxSpeed: 7
   JumpPower: 12.2
   respawnPoint: {fileID: 0}
   fadeEffect: {fileID: 0}

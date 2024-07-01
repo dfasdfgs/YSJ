@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Strat.unity
+    guid: d5c25de5803a3d2478b5369b71e92005
+  - enabled: 1
     path: Assets/Scenes/DAYS/DAY1.unity
     guid: 1498a1a9ed77faf46a08d4061cacfdfd
   - enabled: 1
@@ -18,30 +21,30 @@ EditorBuildSettings:
     path: Assets/Scenes/DAYS/DAY4.unity
     guid: 63436c287074ab945ab2338d8d259b39
   - enabled: 1
-    path: Assets/Scenes/DAY5.unity
-    guid: 61b6e2c9989510843b4176b4a1ee58a1
+    path: Assets/Scenes/DAYS/DAY5.unity
+    guid: 3f48bfcc1b1040d40a25b9dd922eb208
   - enabled: 1
-    path: Assets/Scenes/DAY6.unity
-    guid: a75af98f107fdab4dbb1102b634dff20
+    path: Assets/Scenes/DAYS/DAY6.unity
+    guid: 3bc9c9971f9fe77449f712cb7abc4098
   - enabled: 1
-    path: Assets/Scenes/DAY7.unity
-    guid: 7f2769c5511c7e0439bd4580a420144d
+    path: Assets/Scenes/DAYS/DAY7.unity
+    guid: 8aec0a580fa8e1d42b80cfb23e3e118a
   - enabled: 1
-    path: Assets/Scenes/DAY8.unity
-    guid: fc648ce55913b334aa858cf37aee9c16
+    path: Assets/Scenes/DAYS/DAY8.unity
+    guid: fdae0126024359f4eb1dc61f26c7b38e
   - enabled: 1
-    path: Assets/Scenes/DAY9.unity
-    guid: 50174e07279c6434d83bd542a27bf323
+    path: Assets/Scenes/DAYS/DAY9.unity
+    guid: cb391da4e303b6d48bc2fe751e63207b
   - enabled: 1
-    path: Assets/Scenes/DAY10.unity
-    guid: 300f0338e0ff0d84187fe2eae0db8746
+    path: Assets/Scenes/DAYS/DAY10.unity
+    guid: 7ec2c77fda68af748a9129352f09a67e
   - enabled: 1
-    path: Assets/Scenes/DAY11.unity
-    guid: 52a1175e9282f0249a42640626a5b809
+    path: Assets/Scenes/DAYS/DAY11.unity
+    guid: 2fba9248118f3ab4a828bfb7186391e9
   - enabled: 1
-    path: Assets/Scenes/DAY12.unity
-    guid: a87631da219ebc04cbca9d9bce0e4f6e
+    path: Assets/Scenes/DAYS/DAY12.unity
+    guid: ae021630415017f4397855693260fbff
   - enabled: 1
-    path: Assets/Scenes/DAY13.unity
-    guid: ef0f3e675948c3d4da325b39321dca3d
+    path: Assets/Scenes/DAYS/DAY13.unity
+    guid: 775ccbac794a193409a861cc58cade65
   m_configObjects: {}

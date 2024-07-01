@@ -77,10 +77,6 @@ public class PlayerMove : MonoBehaviour
             transform.Translate(Vector3.left * MaxSpeed * Time.deltaTime);
             animator.SetBool("Move", true);
         }
-        else 
-        {
-            animator.SetBool("Move", false);
-        }
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
@@ -106,7 +102,7 @@ public class PlayerMove : MonoBehaviour
         if (collision.gameObject.tag == "item")
         {
             Getitem = true;
-            animator.SetBool("I_Move", true);
+            animator.Play("ItemIdle");
         }
         else if (collision.gameObject.tag == "Finish")
         {
