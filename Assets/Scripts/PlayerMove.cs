@@ -20,6 +20,9 @@ public class PlayerMove : MonoBehaviour
     private int currentMapIndex = 0;
     private SpriteRenderer spriterenderer;
 
+    public RuntimeAnimatorController RAC2;
+    public Animator nn;
+
     public static bool Getitem { get; private set; }  // æ∆¿Ã≈€ »πµÊ ªÛ≈¬
     public static bool Finish { get; private set; }   // ∏Ò«• µµ¬¯ ªÛ≈¬
 
@@ -33,6 +36,8 @@ public class PlayerMove : MonoBehaviour
 
     private void Start()
     {
+        nn = GetComponent<Animator>();
+
         initialcameraPosition = transform.position;
 
         mapCameraInitialpositions = new Vector3[]
@@ -77,6 +82,10 @@ public class PlayerMove : MonoBehaviour
             transform.Translate(Vector3.left * MaxSpeed * Time.deltaTime);
             animator.SetBool("Move", true);
         }
+        else
+        {
+            animator.SetBool("Move", false);
+        }
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
@@ -102,7 +111,7 @@ public class PlayerMove : MonoBehaviour
         if (collision.gameObject.tag == "item")
         {
             Getitem = true;
-            animator.Play("ItemIdle");
+            nn.runtimeAnimatorController = RAC2;
         }
         else if (collision.gameObject.tag == "Finish")
         {
