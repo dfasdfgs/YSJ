@@ -14,6 +14,7 @@ public class PlayerMove : MonoBehaviour
 
     private bool IsJumping;
     private Rigidbody2D PlayerRigid;
+    public bool ismoving = false;
 
     private Vector3 initialcameraPosition;
     public Vector3[] mapCameraInitialpositions;
@@ -22,6 +23,7 @@ public class PlayerMove : MonoBehaviour
 
     public RuntimeAnimatorController RAC2;
     public Animator nn;
+    public AudioSource moveaudio;
 
     public static bool Getitem { get; private set; }  // æ∆¿Ã≈€ »πµÊ ªÛ≈¬
     public static bool Finish { get; private set; }   // ∏Ò«• µµ¬¯ ªÛ≈¬
@@ -67,6 +69,7 @@ public class PlayerMove : MonoBehaviour
             IsJumping = true;
         }
         Move();
+        moveSound();
     }
 
 
@@ -76,15 +79,18 @@ public class PlayerMove : MonoBehaviour
         {
             transform.Translate(Vector3.right * MaxSpeed * Time.deltaTime);
             animator.SetBool("Move", true);
+            ismoving = true;
         }
         else if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Translate(Vector3.left * MaxSpeed * Time.deltaTime);
             animator.SetBool("Move", true);
+            ismoving = true;
         }
         else
         {
             animator.SetBool("Move", false);
+            ismoving = false;
         }
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
@@ -96,6 +102,19 @@ public class PlayerMove : MonoBehaviour
             spriterenderer.flipX = true;
         }
     }
+    private void moveSound()
+    {
+        if (ismoving)
+        {
+            if (!moveaudio.isPlaying)
+                moveaudio.Play();
+        }
+        else
+        {
+            moveaudio.Stop();
+        }
+    }
+
 
 
     void OnCollisionEnter2D(Collision2D collision)
