@@ -24,6 +24,7 @@ public class PlayerMove : MonoBehaviour
     public RuntimeAnimatorController RAC2;
     public Animator nn;
     public AudioSource moveaudio;
+    public GameObject itemflip;
 
     public static bool Getitem { get; private set; }  // æ∆¿Ã≈€ »πµÊ ªÛ≈¬
     public static bool Finish { get; private set; }   // ∏Ò«• µµ¬¯ ªÛ≈¬
@@ -96,10 +97,13 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             spriterenderer.flipX = false;
+            ItemSet();
+
         }
         else if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             spriterenderer.flipX = true;
+            ItemGet();
         }
     }
     private void moveSound()
@@ -115,7 +119,14 @@ public class PlayerMove : MonoBehaviour
         }
     }
 
-
+    private void ItemGet()
+    {
+        itemflip.transform.localPosition = new Vector3(-0.57f, -0.125f, 1f);
+    }
+    private void ItemSet()
+    {
+        itemflip.transform.localPosition = new Vector3(0.574f, -0.125f, 1f);
+    }
 
     void OnCollisionEnter2D(Collision2D collision)
     {

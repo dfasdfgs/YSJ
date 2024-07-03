@@ -9,28 +9,18 @@ public class getitem: MonoBehaviour
     public Sprite sprites;
     SpriteRenderer spriteRenderer;
 
-    public bool isLeft;
-    SpriteRenderer player;
-
-    Quaternion rightPos = Quaternion.Euler(0.574f, -0.125f, 1f);
-    Quaternion rightPosReverse = Quaternion.Euler(-0.125f, -0.125f, 1f);
-
+    public GameObject Object;
 
 
     private void Awake()
     {
-        player = GetComponentInParent<SpriteRenderer>();
+
     }
 
     private void LateUpdate()
     {
 
-        bool isReverse = player.flipX;
-        if (isLeft)
-        {
-            transform.localRotation = isReverse ? rightPosReverse : rightPos;
-            spriteRenderer.flipX = isReverse;
-        }
+
     }
 
     void Start()

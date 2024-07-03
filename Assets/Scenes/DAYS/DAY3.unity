@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2713793594219168885, guid: 5939d51c8e858b94cb85ccab3f3d77dc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1730352179, guid: 7183067b1606fcf4982ad0e79b0a9275, type: 3}
     - target: {fileID: 4823590604209821563, guid: 5939d51c8e858b94cb85ccab3f3d77dc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.1281
@@ -170,6 +174,10 @@ PrefabInstance:
     - target: {fileID: 4823590604209821563, guid: 5939d51c8e858b94cb85ccab3f3d77dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145815393630446539, guid: 5939d51c8e858b94cb85ccab3f3d77dc, type: 3}
+      propertyPath: stage
+      value: DAY4
       objectReference: {fileID: 0}
     - target: {fileID: 7119395366401531398, guid: 5939d51c8e858b94cb85ccab3f3d77dc, type: 3}
       propertyPath: m_Name
@@ -989,7 +997,7 @@ Transform:
   m_GameObject: {fileID: 1543517779}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.39, y: -2.65, z: 0}
+  m_LocalPosition: {x: 67.62, y: 3.5, z: 0}
   m_LocalScale: {x: 0.9232724, y: 0.9474047, z: 0.62877}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1250,6 +1258,10 @@ PrefabInstance:
     - target: {fileID: 5497862572536084683, guid: 234b85274902e3f479563bf1244cb232, type: 3}
       propertyPath: m_Name
       value: fadeout
+      objectReference: {fileID: 0}
+    - target: {fileID: 5541510141353248265, guid: 234b85274902e3f479563bf1244cb232, type: 3}
+      propertyPath: m_Text
+      value: "3\uC77C\uCC28"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
