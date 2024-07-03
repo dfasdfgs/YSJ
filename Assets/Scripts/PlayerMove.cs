@@ -1,9 +1,14 @@
 using UnityEngine;
 using System.Collections;
 using System.Runtime.InteropServices;
+using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class PlayerMove : MonoBehaviour
 {
+    public string stage;
+    public GameManager GameManager;
+
     public float MaxSpeed;
     public float JumpPower;
     public Transform respawnPoint; // 부활 지점
@@ -166,6 +171,7 @@ public class PlayerMove : MonoBehaviour
         // 플레이어 위치를 부활 지점으로 설정
         transform.position = respawnPoint.position;
         PlayerRigid.velocity = Vector2.zero;
+        SceneManager.LoadScene(stage);
 
         if (currentMapIndex < mapCameraInitialpositions.Length)
         {

@@ -625,6 +625,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1683939118961483356, guid: bba3a9b767f8987438cc074f454bed05, type: 3}
+      propertyPath: stage
+      value: DAY2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1683939118961483356, guid: bba3a9b767f8987438cc074f454bed05, type: 3}
       propertyPath: fadeEffect
       value: 
       objectReference: {fileID: 551392977}

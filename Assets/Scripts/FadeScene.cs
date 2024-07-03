@@ -7,7 +7,7 @@ public class FadeScene : MonoBehaviour
 {
     public Image FadeImage;
     public Text FadeText;
-    private float FadeAlpha = 1.0f;
+    public float FadeAlpha = 1.0f;
     private AudioSource backGroundAudio;
 
     // Start is called before the first frame update
@@ -22,7 +22,7 @@ public class FadeScene : MonoBehaviour
     {
         while(FadeAlpha >= 0)
         {
-            FadeAlpha -= 0.03f;
+            FadeAlpha -= 0.01f;
 
             FadeImage.color = new Color(FadeImage.color.r,FadeImage.color.g,FadeImage.color.b, FadeAlpha);
             FadeText.color = new Color(FadeText.color.r, FadeText.color.g, FadeText.color.b, FadeAlpha);

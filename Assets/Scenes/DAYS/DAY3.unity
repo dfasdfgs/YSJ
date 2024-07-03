@@ -566,6 +566,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1683939118961483356, guid: bba3a9b767f8987438cc074f454bed05, type: 3}
+      propertyPath: stage
+      value: DAY3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1683939118961483356, guid: bba3a9b767f8987438cc074f454bed05, type: 3}
       propertyPath: fadeEffect
       value: 
       objectReference: {fileID: 1924126162}
