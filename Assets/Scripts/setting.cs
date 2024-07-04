@@ -9,11 +9,11 @@ public class setting : MonoBehaviour
     public GameObject satting;
     public bool issatting;
 
-    private void Start()
+
+    private void Awake()
     {
         issatting = true;
     }
-
 
     private void Update()
     {
@@ -35,12 +35,14 @@ public class setting : MonoBehaviour
     }
 
     public void ExitBtn()
-    {
+    {        
+        Time.timeScale = 1f;
         Application.Quit();
     }
 
     public void MainScene()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Strat");
     }
 
