@@ -248,6 +248,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630d9bd97afe3954487b9ef541776d80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage: 
+  GameManager: {fileID: 0}
   MaxSpeed: 3
   JumpPower: 7
   respawnPoint: {fileID: 0}
@@ -361,7 +363,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8ae26a417dccdef44b7e30f330fd95fc, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 1d8ad2830cc5dbd42bb6f17dce2c1fe5, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.2
   m_Pitch: 1

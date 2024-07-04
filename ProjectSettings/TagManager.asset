@@ -10,6 +10,8 @@ TagManager:
   - Move
   - Water
   - pickupitem
+  - Cave
+  - 5Day
   layers:
   - Default
   - TransparentFX

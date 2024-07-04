@@ -541,6 +541,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1057996433}
     - target: {fileID: 1683939118961483356, guid: bba3a9b767f8987438cc074f454bed05, type: 3}
+      propertyPath: takeitem
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1683939118961483356, guid: bba3a9b767f8987438cc074f454bed05, type: 3}
       propertyPath: fadeEffect
       value: 
       objectReference: {fileID: 1930181132}
@@ -555,6 +559,10 @@ PrefabInstance:
     - target: {fileID: 6162195466018484639, guid: bba3a9b767f8987438cc074f454bed05, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6165648478150421400, guid: bba3a9b767f8987438cc074f454bed05, type: 3}
+      propertyPath: m_Volume
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6253287369517733103, guid: bba3a9b767f8987438cc074f454bed05, type: 3}
       propertyPath: m_LocalPosition.x

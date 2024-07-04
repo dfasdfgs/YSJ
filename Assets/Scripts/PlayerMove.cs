@@ -68,16 +68,20 @@ public class PlayerMove : MonoBehaviour
 
     private void Update()
     {
+        Jump();
+        Move();
+        moveSound();
+    }
+
+    private void Jump()
+    {
         if (Input.GetButtonDown("Jump") && !IsJumping)
         {
             animator.SetTrigger("Jump");
             PlayerRigid.AddForce(Vector2.up * JumpPower, ForceMode2D.Impulse);
             IsJumping = true;
         }
-        Move();
-        moveSound();
     }
-
 
     private void Move()
     {
@@ -116,7 +120,9 @@ public class PlayerMove : MonoBehaviour
         if (ismoving)
         {
             if (!moveaudio.isPlaying)
+            {
                 moveaudio.Play();
+            }
         }
         else
         {
@@ -137,6 +143,7 @@ public class PlayerMove : MonoBehaviour
     {
         if (collision.gameObject.tag == "Ground")
         {
+
             IsJumping = false;
         }
     }

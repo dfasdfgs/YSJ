@@ -1603,6 +1603,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1683939118961483356, guid: bba3a9b767f8987438cc074f454bed05, type: 3}
+      propertyPath: stage
+      value: DAY4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1683939118961483356, guid: bba3a9b767f8987438cc074f454bed05, type: 3}
       propertyPath: fadeEffect
       value: 
       objectReference: {fileID: 210483598}
@@ -1613,7 +1617,7 @@ PrefabInstance:
     - target: {fileID: 1828086225776063982, guid: bba3a9b767f8987438cc074f454bed05, type: 3}
       propertyPath: sprites
       value: 
-      objectReference: {fileID: -1349007175, guid: 7183067b1606fcf4982ad0e79b0a9275, type: 3}
+      objectReference: {fileID: 639648809, guid: 7183067b1606fcf4982ad0e79b0a9275, type: 3}
     - target: {fileID: 6162195466018484639, guid: bba3a9b767f8987438cc074f454bed05, type: 3}
       propertyPath: m_Name
       value: Player

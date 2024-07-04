@@ -1319,6 +1319,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1683939118961483356, guid: bba3a9b767f8987438cc074f454bed05, type: 3}
+      propertyPath: stage
+      value: DAY6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1683939118961483356, guid: bba3a9b767f8987438cc074f454bed05, type: 3}
       propertyPath: MaxSpeed
       value: 4.41
       objectReference: {fileID: 0}
@@ -1333,7 +1337,7 @@ PrefabInstance:
     - target: {fileID: 1828086225776063982, guid: bba3a9b767f8987438cc074f454bed05, type: 3}
       propertyPath: sprites
       value: 
-      objectReference: {fileID: -1530856480, guid: 7183067b1606fcf4982ad0e79b0a9275, type: 3}
+      objectReference: {fileID: -387290401, guid: 7183067b1606fcf4982ad0e79b0a9275, type: 3}
     - target: {fileID: 4646868757552896266, guid: bba3a9b767f8987438cc074f454bed05, type: 3}
       propertyPath: m_Name
       value: Player
