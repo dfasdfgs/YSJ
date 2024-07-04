@@ -6,10 +6,6 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
 
-    public void Action()
-    {
-    }
-
     void Update()
     {
         
