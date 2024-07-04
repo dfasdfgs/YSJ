@@ -23,11 +23,13 @@ public class setting : MonoBehaviour
             {
                 satting.SetActive(true);
                 issatting = false;
+                Time.timeScale = 0f;
             }
             else 
             {
                 satting.SetActive(false);
                 issatting =true;
+                Time.timeScale = 1f;
             }
         }
     }
