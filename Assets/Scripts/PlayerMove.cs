@@ -164,6 +164,11 @@ public class PlayerMove : MonoBehaviour
             Debug.Log("플레이어가 물에 닿았음");
             StartCoroutine(HandlePlayerDeath());
         }
+        else if (collision.gameObject.tag == "monster")
+        {
+            StartCoroutine(HandlePlayerDeath());
+        }
+
     }
 
     private IEnumerator HandlePlayerDeath()
@@ -175,19 +180,7 @@ public class PlayerMove : MonoBehaviour
         // 페이드 아웃이 완료될 때까지 대기
         yield return new WaitForSeconds(fadeTime);
 
-        // 플레이어 위치를 부활 지점으로 설정
-        transform.position = respawnPoint.position;
-        PlayerRigid.velocity = Vector2.zero;
         SceneManager.LoadScene(stage);
-
-        if (currentMapIndex < mapCameraInitialpositions.Length)
-        {
-            Camera.main.transform.position = mapCameraInitialpositions[currentMapIndex];
-        }
-        else
-        {
-            Debug.LogError("맵 인덱스가 초기화된 카메라 위치 배열의 범위를 벗어납니다.");
-        }
 
         Debug.Log("페이드 인 시작");
         // 페이드 인 시작

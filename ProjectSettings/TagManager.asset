@@ -12,6 +12,7 @@ TagManager:
   - pickupitem
   - Cave
   - 5Day
+  - monster
   layers:
   - Default
   - TransparentFX
