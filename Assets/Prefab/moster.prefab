@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2758015744277885407}
   - component: {fileID: 6094453835947123000}
-  - component: {fileID: 860935973941343251}
   - component: {fileID: 3336503662995597239}
+  - component: {fileID: 241775855603626966}
   m_Layer: 0
   m_Name: moster
   m_TagString: monster
@@ -86,7 +86,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &860935973941343251
+--- !u!114 &3336503662995597239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3657658645858580356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0b4b3c6938d6b8438f424dc5528d381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turn: 3
+  moveSpeed: 1
+--- !u!61 &241775855603626966
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -118,7 +132,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.13756323, y: -0.1150291}
+  m_Offset: {x: -0.09547484, y: -0.24475455}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -129,19 +143,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.8728285, y: 0.87722445}
+  m_Size: {x: 1.6305354, y: 0.53305435}
   m_EdgeRadius: 0
---- !u!114 &3336503662995597239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3657658645858580356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0b4b3c6938d6b8438f424dc5528d381, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  turn: 3
-  moveSpeed: 1

@@ -1,8 +1,6 @@
 using System.Collections;
-using System.Runtime.InteropServices;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Tilemaps;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class CamShake : MonoBehaviour
@@ -12,6 +10,8 @@ public class CamShake : MonoBehaviour
     int waitingTime;
     float ttimer;
     int wwaitingTime;
+    float tttimer;
+    int wwwaitingTime;
     [SerializeField]
     private float m_roughness;      //°ÅÄ¥±â Á¤µµ
     [SerializeField]
@@ -23,6 +23,8 @@ public class CamShake : MonoBehaviour
         waitingTime = 3;
         ttimer = 0.0f;
         wwaitingTime = 17;
+        tttimer = 0.0f;
+        wwwaitingTime = 19;
     }
 
     private void Update()
@@ -36,6 +38,11 @@ public class CamShake : MonoBehaviour
         if (ttimer > wwaitingTime)
         {
             BImage.gameObject.SetActive(true);
+        }
+        tttimer += Time.deltaTime;
+        if (tttimer > wwwaitingTime)
+        {
+            SceneManager.LoadScene("sin");
         }
     }
 

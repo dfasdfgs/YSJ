@@ -45,9 +45,9 @@ EditorBuildSettings:
     path: Assets/Scenes/DAYS/DAY12.unity
     guid: ae021630415017f4397855693260fbff
   - enabled: 1
-    path: Assets/Scenes/DAYS/DAY13.unity
-    guid: 775ccbac794a193409a861cc58cade65
-  - enabled: 1
     path: Assets/Scenes/DAYS/END1.unity
     guid: 62c7ec55897c3ad46b41b6569cb55f8f
+  - enabled: 1
+    path: Assets/Scenes/sin.unity
+    guid: dec60b9e741ee564cb85b40cc9f375ca
   m_configObjects: {}

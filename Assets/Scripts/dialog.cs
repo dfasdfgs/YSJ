@@ -1,7 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;//Text field를 사용할 수 있도록 하는 header
+using UnityEngine.UI;
 
 [System.Serializable] //직접 만든 class에 접근할 수 있도록 해줌. 
 public class Dialogue

@@ -1,7 +1,5 @@
 using UnityEngine;
 using System.Collections;
-using System.Runtime.InteropServices;
-using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
 
 public class PlayerMove : MonoBehaviour
@@ -21,9 +19,7 @@ public class PlayerMove : MonoBehaviour
     private Rigidbody2D PlayerRigid;
     public bool ismoving = false;
 
-    private Vector3 initialcameraPosition;
     public Vector3[] mapCameraInitialpositions;
-    private int currentMapIndex = 0;
     private SpriteRenderer spriterenderer;
 
     public RuntimeAnimatorController RAC2;
@@ -46,13 +42,7 @@ public class PlayerMove : MonoBehaviour
     {
         nn = GetComponent<Animator>();
 
-        initialcameraPosition = transform.position;
 
-        mapCameraInitialpositions = new Vector3[]
-        {
-            new Vector3(0,0,-10),
-            new Vector3(10,5,-10),
-        };
         // FadeInEffect에서 fadeTime 변수 가져오기
         fadeTime = fadeEffect.fadeTime;
 

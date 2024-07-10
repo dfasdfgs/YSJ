@@ -1,7 +1,6 @@
 using UnityEngine.UI;
 using System.Collections;
 using UnityEngine;
-using System.Diagnostics;
 
 public enum FadeState { FadeIn = 0, FadeOut, FadeInOut, FadeLoop }
 public class FadeInEffect : MonoBehaviour
