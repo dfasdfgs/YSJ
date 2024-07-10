@@ -216,7 +216,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &8050563619312984375
 MonoBehaviour:
@@ -273,4 +273,3 @@ MonoBehaviour:
   FadeImage: {fileID: 6332604416292683022}
   FadeText: {fileID: 5541510141353248265}
   FadeAlpha: 1
-  FadeObject: {fileID: 2290767755458082613}
