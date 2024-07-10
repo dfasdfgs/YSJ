@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using System.Threading;
 
 public class PlayerMove : MonoBehaviour
 {
@@ -70,6 +71,7 @@ public class PlayerMove : MonoBehaviour
             animator.SetTrigger("Jump");
             PlayerRigid.AddForce(Vector2.up * JumpPower, ForceMode2D.Impulse);
             IsJumping = true;
+            moveaudio.mute = true;
         }
     }
 
@@ -135,6 +137,7 @@ public class PlayerMove : MonoBehaviour
         {
 
             IsJumping = false;
+            moveaudio.mute = false;
         }
     }
 
