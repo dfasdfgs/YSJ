@@ -11,7 +11,6 @@ public class getitem: MonoBehaviour
 
     private void Awake()
     {
-
     }
 
     private void LateUpdate()
@@ -35,10 +34,5 @@ public class getitem: MonoBehaviour
             Img_Renderer.sprite = sprites;
             Destroy(collision.gameObject);
         }
-    }
-    private void Update()
-    {
-//        if (Input.GetButtonDown("Horizontal"))
-//            transform.localScale = new Vector3(-1, 1, 1); 
     }
 }

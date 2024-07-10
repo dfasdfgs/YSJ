@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6148240785682688770}
   - component: {fileID: 1594155597535496198}
   - component: {fileID: 1828086225776063982}
-  - component: {fileID: 8142232863002553927}
+  - component: {fileID: 1400351495470182945}
   m_Layer: 0
   m_Name: Pickupitem
   m_TagString: Untagged
@@ -101,8 +101,8 @@ MonoBehaviour:
   Img_Renderer: {fileID: 0}
   sprites: {fileID: 639648809, guid: 7183067b1606fcf4982ad0e79b0a9275, type: 3}
   Object: {fileID: 0}
---- !u!61 &8142232863002553927
-BoxCollider2D:
+--- !u!70 &1400351495470182945
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -133,19 +133,9 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.6088544, y: 0.070376515}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.0179725, y: 2.4267313}
-  m_EdgeRadius: 0
+  m_Offset: {x: 0, y: 0.43145353}
+  m_Size: {x: 0.5, y: 1.8629074}
+  m_Direction: 0
 --- !u!1 &6162195466018484639
 GameObject:
   m_ObjectHideFlags: 0

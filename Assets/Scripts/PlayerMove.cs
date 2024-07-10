@@ -161,7 +161,6 @@ public class PlayerMove : MonoBehaviour
         {
             StartCoroutine(HandlePlayerDeath());
         }
-
     }
 
     private IEnumerator HandlePlayerDeath()
